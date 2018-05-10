@@ -1,0 +1,12 @@
+
+dashcam:
+   active: True
+   target_dir: "/home/pi/system/videos"
+   shot_duration: 60                 # seconds
+   number_of_shots: 3                # -1 for infinite captures
+
+backup:
+   active: True
+   sources:
+      - "dashcam"
+   target: "/media/raspi-share"
